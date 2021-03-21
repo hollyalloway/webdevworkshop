@@ -1,0 +1,86 @@
+/* I couldn't configure layout 5 or 6 so I attempted and moved onto layout 7. */
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    
+    <meta charset="utf-8" />
+    
+    <title>Layout 5</title>
+    
+    <style>
+        div{
+            outline: 1px solid black;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: auto;
+            max-width: 800px;
+        }
+
+        .blue {
+            background-color: blue;
+            height: 200px;
+        }
+
+        .red {
+            background-color: red;
+            height: 400px;
+        }
+
+        #red {
+            background-color: red;
+            height: 400px;
+            width: 
+        }
+
+        #green {
+            background-color: lime;
+            grid-column: 1/4;
+            height: 200px;
+        }
+
+        #yellow1{
+            background-color: yellow;
+            margin: 20px 20px 20px 100px;
+            height: 130px;
+            width: 130px;
+        }
+
+        #yellow2{
+            background-color: yellow;
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+        }
+        
+        #yellow3{
+            background-color: yellow;
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue">
+            <div id="yellow1"></div>  
+        </div>
+        <div class="red"></div>
+        <div class="red">
+         <div id="yellow2"></div>
+        </div>
+        <div id="red"></div>
+        <div id="green"></div>
+    </div>
+</body>
+
+</html>
